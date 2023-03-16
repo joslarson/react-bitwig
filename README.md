@@ -110,7 +110,7 @@ Not very useful yet... Let's jump in and create some init phase values/state and
 
 ```tsx
 // src/components/play-toggle.js
-
+import React from 'react';
 import ReactBitwig, { Midi } from 'react-bitwig';
 
 // `createInitValue` defines a gettable value that needs to be setup during the init phase
