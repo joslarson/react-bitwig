@@ -110,6 +110,7 @@ Not very useful yet... Let's jump in and create some init phase values/state and
 
 ```tsx
 // src/components/play-toggle.js
+
 import React from 'react';
 import ReactBitwig, { Midi } from 'react-bitwig';
 
@@ -131,7 +132,7 @@ const IsPlayingState = ReactBitwig.createInitState(() => {
 });
 
 // define our component using TransportValue and IsPlayingState form above
-const PlayToggle = () => {
+export const PlayToggle = () => {
   // keep track of button pressed state so we can keep the button illuminated
   // while the button is continues to be pressed when the transport is stopped
   const [isPressed, setIsPressed] = React.useState(false);
