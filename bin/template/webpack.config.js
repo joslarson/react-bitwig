@@ -79,6 +79,7 @@ module.exports = (_, { mode = 'production' }) => ({
         },
       },
     },
+    runtimeChunk: { name: "runtime" },
     // makes output easy to read for debugging
     concatenateModules: true,
   },
