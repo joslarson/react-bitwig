@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-bitwig": "^{{ packageVersion }}"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.0",
+    "@types/react": "^18.0.28",
+    "babel-loader": "^9.1.2",
+    "bitwig-webpack-plugin": "^2.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "glob": "^9.2.1",
+    "typed-bitwig-api": "{{ apiTypesVersion }}",
+    "typescript": "{{ typescriptVersion }}",
+    "webpack-cli": "^5.0.1",
+    "webpack": "^5.76.1"
+  }
+}

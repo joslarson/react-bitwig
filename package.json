@@ -1,0 +1,54 @@
+{
+  "name": "react-bitwig",
+  "description": "A framework for building Bitwig Studio controller scripts in React",
+  "version": "1.0.0",
+  "repository": "joslarson/react-bitwig",
+  "author": "Joseph Larson",
+  "tags": [
+    "bitwig",
+    "react",
+    "control surface script",
+    "typescript"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/joslarson/react-bitwig/issues"
+  },
+  "homepage": "https://github.com/joslarson/react-bitwig#readme",
+  "main": "./dist/index.js",
+  "bin": {
+    "react-bitwig": "./bin/react-bitwig.mjs",
+    "rb": "./bin/react-bitwig.mjs"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "commander": "^10.0.0",
+    "glob": "^9.2.1",
+    "npm-run-all": "^4.1.5",
+    "nunjucks": "^3.2.3",
+    "prompt-sync": "^4.2.0",
+    "react-reconciler": "0.29.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "@types/react-reconciler": "0.28.2",
+    "prettier": "^2.8.4",
+    "typed-bitwig-api": "^17.0.1",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "start": "tsc --watch",
+    "build": "tsc",
+    "clean": "rm -rf ./dist",
+    "test": "echo \"OK!\"",
+    "test:ts": "tsc --noEmit",
+    "format": "prettier --write ./src",
+    "preversion": "npm test && npm run build",
+    "postversion": "npm run clean",
+    "prepack": "npm test && npm run build"
+  },
+  "engines": {
+    "node": ">= 16.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "rootDir": "src",
+    "baseUrl": "./src",
+    "jsx": "react-jsx",
+    "lib": ["DOM", "ESNext", "ScriptHost"],
+    "types": ["typed-bitwig-api"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "declaration": true
+  },
+  "include": ["src"]
+}

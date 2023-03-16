@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "es2015",
+    "rootDir": "src",
+    "baseUrl": "./src",
+    "jsx": "react-jsx",
+    "lib": ["DOM", "ESNext", "ScriptHost"],
+    "types": ["typed-bitwig-api"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "paths": {
+      "@/*": ["src/*"],
+      "*": ["node_modules/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}
