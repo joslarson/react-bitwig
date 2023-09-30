@@ -270,7 +270,7 @@ The `onChange` prop can similarly be used to subscribe **only to changes** in th
 
 Patterns can be defined in string or object literal form.
 
-- **Object literal form** allows you to define MIDI patterns by assuming undefined MIDI byte values to be wild cards (e.g. `{ status: 0xb0, data1: 0x18 }` where any MIDI message matching the provided values will be passed through). Though slightly less powerful and more verbose than string from patterns, you may find object literal form to be more readable while still covering the vast majority of use cases.
+- **Object literal form** allows you to define MIDI patterns by assuming undefined MIDI byte values to be wild cards (e.g. `{ status: 0xb0, data1: 0x18 }` where any MIDI message matching the provided values will be passed through). Though slightly less powerful and more verbose than string form patterns, you may find object literal form to be more readable while still covering the vast majority of use cases.
 
 - **String form** patterns are the most expressive and concise, representing the MIDI port and each MIDI byte as consecutive two character hexadecimal values, with question marks used for wildcard matching (e.g. `'B018??'` where `B0`, `18`, and `??` represent the status, data1, and data2 values).
 
