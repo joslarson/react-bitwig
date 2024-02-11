@@ -1,7 +1,7 @@
 {
   "name": "react-bitwig",
   "description": "A framework for building Bitwig Studio controller scripts in React",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "repository": "joslarson/react-bitwig",
   "author": "Joseph Larson",
   "tags": [
