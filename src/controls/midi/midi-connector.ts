@@ -233,6 +233,9 @@ export class MidiConnector extends ControlConnectorBase<MidiInstance> {
     if (
       isMount ||
       newProps.port !== oldProps.port ||
+      // TODO: look into more perf friendly way to solve this in the midi node
+      (newProps.pattern === undefined &&
+        !deepEqual(newProps.value, oldProps.value)) ||
       !deepEqual(newProps.pattern, oldProps.pattern)
     ) {
       // create new node
