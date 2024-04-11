@@ -171,7 +171,7 @@ export const PlayToggle = () => {
 
 > **Note:** Generally speaking, when this documentation mentions MIDI input or output, it is speaking from the perspective of the script, not the controller. So "input" is referring to MIDI messages traveling from the controller to the script, and "output" is referencing messages moving from the script to the controller.
 
-Once you've you've finished building your `PlayToggle` component, import it into `getting-started.control.js` and render it as a child of your ControllerScript component:
+Once you've finished building your `PlayToggle` component, import it into `getting-started.control.js` and render it as a child of your ControllerScript component:
 
 ```tsx
 // src/getting-started.control.js
